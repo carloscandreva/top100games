@@ -16,6 +16,9 @@
 		1420BDA521029C5200B1D9F6 /* top100gamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420BDA421029C5200B1D9F6 /* top100gamesTests.swift */; };
 		1420BDB021029C5200B1D9F6 /* top100gamesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420BDAF21029C5200B1D9F6 /* top100gamesUITests.swift */; };
 		1420BDC22102A1A400B1D9F6 /* TopOneHundredGamesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420BDC12102A1A400B1D9F6 /* TopOneHundredGamesAPI.swift */; };
+		1420BDC42102B4A400B1D9F6 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420BDC32102B4A400B1D9F6 /* GameModel.swift */; };
+		1420BDC62102B92700B1D9F6 /* BoxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420BDC52102B92700B1D9F6 /* BoxModel.swift */; };
+		1420BDC82102B95900B1D9F6 /* LogoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420BDC72102B95900B1D9F6 /* LogoModel.swift */; };
 		8FE12F2CE5EA7D874DD44905 /* Pods_top100gamesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E868ACE2648878DCAA0966ED /* Pods_top100gamesUITests.framework */; };
 		A7286A64E3BC836127EE1D3C /* Pods_top100games.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76950D844A0607A317AD64F /* Pods_top100games.framework */; };
 		C7600C55FAB70B696CD0000E /* Pods_top100gamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC74B86633CB6CD697263D82 /* Pods_top100gamesTests.framework */; };
@@ -54,6 +57,9 @@
 		1420BDAF21029C5200B1D9F6 /* top100gamesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = top100gamesUITests.swift; sourceTree = "<group>"; };
 		1420BDB121029C5200B1D9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1420BDC12102A1A400B1D9F6 /* TopOneHundredGamesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopOneHundredGamesAPI.swift; sourceTree = "<group>"; };
+		1420BDC32102B4A400B1D9F6 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		1420BDC52102B92700B1D9F6 /* BoxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxModel.swift; sourceTree = "<group>"; };
+		1420BDC72102B95900B1D9F6 /* LogoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoModel.swift; sourceTree = "<group>"; };
 		2AA66B4A9BA7EBA4C191C14A /* Pods-top100gamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-top100gamesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-top100gamesTests/Pods-top100gamesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2DD82E44ACDEC5904AD00D13 /* Pods-top100games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-top100games.release.xcconfig"; path = "Pods/Target Support Files/Pods-top100games/Pods-top100games.release.xcconfig"; sourceTree = "<group>"; };
 		3991DD20D8660C3B14BDE292 /* Pods-top100gamesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-top100gamesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-top100gamesUITests/Pods-top100gamesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +175,9 @@
 		1420BDBF21029D2100B1D9F6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1420BDC32102B4A400B1D9F6 /* GameModel.swift */,
+				1420BDC52102B92700B1D9F6 /* BoxModel.swift */,
+				1420BDC72102B95900B1D9F6 /* LogoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -417,10 +426,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1420BDC82102B95900B1D9F6 /* LogoModel.swift in Sources */,
 				1420BDC22102A1A400B1D9F6 /* TopOneHundredGamesAPI.swift in Sources */,
 				1420BD8F21029C4F00B1D9F6 /* ViewController.swift in Sources */,
+				1420BDC42102B4A400B1D9F6 /* GameModel.swift in Sources */,
 				1420BD9521029C4F00B1D9F6 /* top100games.xcdatamodeld in Sources */,
 				1420BD8D21029C4F00B1D9F6 /* AppDelegate.swift in Sources */,
+				1420BDC62102B92700B1D9F6 /* BoxModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,12 +539,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -582,11 +595,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
