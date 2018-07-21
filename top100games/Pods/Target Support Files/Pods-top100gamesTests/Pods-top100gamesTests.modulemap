@@ -1,0 +1,6 @@
+framework module Pods_top100gamesTests {
+  umbrella header "Pods-top100gamesTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
