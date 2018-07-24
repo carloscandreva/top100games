@@ -85,16 +85,14 @@ class TopGameViewController: UIViewController {
         } else {
             do {
                 let alertView = UIAlertController(title: "", message: "Você está sem conexão, iremos tentar carregar as informações do cache.", preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .default, handler: { (alert) in
-                    
+                let action = UIAlertAction(title: "OK", style: .default, handler: { _ in
                 })
                 alertView.addAction(action)
-                self.present(alertView, animated: true, completion: {
-                    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-                    let results = try context.fetch(TopCore.fetchRequest()) as! [TopCore]
-                    self.topGamesCore = results
-                    completion()
-                    } as! () -> Void)
+                self.present(alertView, animated: true, completion: nil)
+                let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+                let results = try context.fetch(TopCore.fetchRequest()) as! [TopCore]
+                self.topGamesCore = results
+                completion()
                 
             } catch {
                 let alertView = UIAlertController(title: "", message: "Nenhuma informação vinda do cache.", preferredStyle: .alert)
