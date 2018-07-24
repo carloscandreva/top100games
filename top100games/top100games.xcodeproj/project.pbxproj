@@ -19,6 +19,8 @@
 		1420BDC42102B4A400B1D9F6 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420BDC32102B4A400B1D9F6 /* GameModel.swift */; };
 		1420BDC62102B92700B1D9F6 /* BoxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420BDC52102B92700B1D9F6 /* BoxModel.swift */; };
 		1420BDC82102B95900B1D9F6 /* LogoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1420BDC72102B95900B1D9F6 /* LogoModel.swift */; };
+		145EAF7D21068FAD0098D195 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145EAF7C21068FAD0098D195 /* CollectionViewCell.swift */; };
+		145EAF7F21069A7A0098D195 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145EAF7E21069A7A0098D195 /* DataStore.swift */; };
 		14C2F9632103BDA1006CAABE /* GamesTop.json in Resources */ = {isa = PBXBuildFile; fileRef = 14C2F9622103BDA1006CAABE /* GamesTop.json */; };
 		14C2F9662103BE92006CAABE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C2F9652103BE92006CAABE /* NetworkManager.swift */; };
 		14C2F9682103C22C006CAABE /* TopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C2F9672103C22C006CAABE /* TopModel.swift */; };
@@ -64,6 +66,8 @@
 		1420BDC32102B4A400B1D9F6 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		1420BDC52102B92700B1D9F6 /* BoxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxModel.swift; sourceTree = "<group>"; };
 		1420BDC72102B95900B1D9F6 /* LogoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoModel.swift; sourceTree = "<group>"; };
+		145EAF7C21068FAD0098D195 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		145EAF7E21069A7A0098D195 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		14C2F9622103BDA1006CAABE /* GamesTop.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GamesTop.json; sourceTree = "<group>"; };
 		14C2F9652103BE92006CAABE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		14C2F9672103C22C006CAABE /* TopModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopModel.swift; sourceTree = "<group>"; };
@@ -138,9 +142,7 @@
 				1420BDBE21029D1600B1D9F6 /* Controller */,
 				1420BDBD21029D0700B1D9F6 /* API */,
 				1420BD8C21029C4F00B1D9F6 /* AppDelegate.swift */,
-				1420BD9021029C4F00B1D9F6 /* Main.storyboard */,
 				1420BD9621029C5200B1D9F6 /* Assets.xcassets */,
-				1420BD9821029C5200B1D9F6 /* LaunchScreen.storyboard */,
 				1420BD9B21029C5200B1D9F6 /* Info.plist */,
 				1420BD9321029C4F00B1D9F6 /* top100games.xcdatamodeld */,
 			);
@@ -190,6 +192,7 @@
 				1420BDC72102B95900B1D9F6 /* LogoModel.swift */,
 				14C2F9672103C22C006CAABE /* TopModel.swift */,
 				14C2F9692103C282006CAABE /* JsonForSwift.swift */,
+				145EAF7E21069A7A0098D195 /* DataStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +200,9 @@
 		1420BDC021029D2600B1D9F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1420BD9821029C5200B1D9F6 /* LaunchScreen.storyboard */,
+				1420BD9021029C4F00B1D9F6 /* Main.storyboard */,
+				145EAF7C21068FAD0098D195 /* CollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -448,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1420BDC82102B95900B1D9F6 /* LogoModel.swift in Sources */,
+				145EAF7F21069A7A0098D195 /* DataStore.swift in Sources */,
 				14C2F9682103C22C006CAABE /* TopModel.swift in Sources */,
 				1420BDC22102A1A400B1D9F6 /* GameApi.swift in Sources */,
 				1420BD8F21029C4F00B1D9F6 /* TopGameViewController.swift in Sources */,
@@ -457,6 +464,7 @@
 				1420BD9521029C4F00B1D9F6 /* top100games.xcdatamodeld in Sources */,
 				1420BD8D21029C4F00B1D9F6 /* AppDelegate.swift in Sources */,
 				1420BDC62102B92700B1D9F6 /* BoxModel.swift in Sources */,
+				145EAF7D21068FAD0098D195 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

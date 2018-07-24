@@ -10,7 +10,7 @@ import Foundation
 import Moya
 
 enum GameApi {
-    case getTopGames
+    case getTopGames()
 }
 extension GameApi: TargetType {
     var baseURL: URL {
@@ -31,7 +31,7 @@ extension GameApi: TargetType {
     }
     
     var task: Task {
-        return .requestPlain
+        return .requestParameters(parameters: ["limit":100], encoding: URLEncoding.queryString)
     }
     
     var headers: [String : String]? {

@@ -19,7 +19,7 @@ struct NetworkManager: Networkable {
     var provider = MoyaProvider<GameApi>(plugins: [NetworkLoggerPlugin(verbose: true)])
     
     func getTopGames(completion: @escaping ([Top]) -> ()) {
-        provider.request(.getTopGames) { result in
+        provider.request(.getTopGames()) { result in
             switch result {
             case let .success(response):
                 do {
