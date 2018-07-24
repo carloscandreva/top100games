@@ -46,7 +46,6 @@ public class Top {
         if (dictionary["game"] != nil) { game = Game(dictionary: dictionary["game"] as! NSDictionary) }
     }
     
-    
     /**
      Returns the dictionary representation for the current instance.
      
